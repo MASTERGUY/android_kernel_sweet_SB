@@ -1,4 +1,5 @@
 /* Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+ * Copyright (C) 2021 XiaoMi, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -1177,7 +1178,6 @@ static void do_gbif_halt(struct kgsl_device *device, u32 reg, u32 ack_reg,
 
 	dev_err(device->dev, "%s GBIF halt timed out\n", client);
 }
-
 static void a6xx_llm_glm_handshake(struct kgsl_device *device)
 {
 	unsigned int val;
