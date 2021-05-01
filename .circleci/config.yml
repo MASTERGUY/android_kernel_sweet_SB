@@ -14,7 +14,7 @@ jobs:
            apt install -y cpio
            mkdir nbm69
            cd nbm69
-           wget https://raw.githubusercontent.com/MASTERGUY/android_kernel_xiaomi_sweet/temp/.circleci/build.sh
+           wget https://raw.githubusercontent.com/MASTERGUY/android_kernel_xiaomi_sweet_SB/11.0/.circleci/build.sh
            source build.sh
 workflows:
   version: 2.1

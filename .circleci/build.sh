@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Cloning dependencies"
-git clone --depth=1 -b temp https://github.com/MASTERGUY/android_kernel_xiaomi_sweet kernel
+git clone --depth=1 -b 11.0 https://github.com/MASTERGUY/android_kernel_xiaomi_sweet_SB kernel
 cd kernel
 git clone --depth=1 -b master https://github.com/MASTERGUY/proton-clang clang
 echo "Done"
