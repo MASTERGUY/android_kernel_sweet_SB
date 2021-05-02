@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Cloning dependencies"
-git clone --depth=1 -b v1 https://github.com/stormbreaker-project/kernel_xiaomi_sweet kernel
+git clone --depth=1 -b 11.0 https://github.com/stormbreaker-project/kernel_xiaomi_sweet kernel
 cd kernel
 git clone --depth=1 -b master https://github.com/MASTERGUY/proton-clang clang
 git clone --depth=1 https://github.com/stormbreaker-project/AnyKernel3 -b sweet AnyKernel3
@@ -33,8 +33,8 @@ ls $PWD/out/arch/arm64/boot/Image.gz-dtb
 function zipping() {
     cp $PWD/out/arch/arm64/boot/Image.gz-dtb $ANYKERNEL3_DIR/
     cd $ANYKERNEL3_DIR || exit 1
-    zip -r9 Sweet-StormBreaker.zip *
-    curl https://bashupload.com/Sweet-StormBreaker.zip --data-binary @Sweet-StormBreaker.zip
+    zip -r9 Sweet-StormBreakerV1.zip *
+    curl https://bashupload.com/Sweet-StormBreakerV1.zip --data-binary @Sweet-StormBreakerV1.zip
 }
 compile
 zipping
